@@ -1,0 +1,68 @@
+@use "../utils/" as *;
+.left-text {
+    h1 {
+        font-size: 36px;
+        color: var(--VeryDarkDesaturatedViolet);
+        padding-bottom: 20px;
+        @include breakpoint_down(medium) {
+            text-align: center;
+        }
+        @include breakpoint_down(small) {
+            text-align: center;
+        }
+    }
+    p {
+        font-size: 16px;
+        color: var(--DarkGrayishViolet);
+        line-height: 1.5;
+        @include breakpoint-down (medium) {
+            text-align: center;
+            br {
+                display: none;
+            }
+            width: 500px;
+        }
+        @include breakpoint-down (small) {
+            text-align: center;
+            br {
+                display: none;
+            }
+            width: 310px;
+        }
+    }
+}
+
+.phone__user__detail {
+    h1 {
+        font-size: 12px;
+        font-weight: 500;
+        padding-bottom: 2px;
+        color: var(--White);
+    }
+    p {
+        font-size: 9px;
+        color: var(--PaleViolet);
+    }
+}
+
+.chat {
+    p {
+        font-size: 9px;
+        line-height: 1.5;
+    }
+    .leftchat {
+        p {
+            color: var(--ModerateViolet);
+        }
+    }
+}
+
+.walk-price {
+    h2 {
+        font-weight: 500;
+        font-size: 14px;
+    }
+    p {
+        font-size: 10px;
+    }
+}
